@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*calcule rectangle*/
+
+        function air(l,h) {
+          return l*h;
+        }
+
+        let l = 10;
+        let h = 30;
+
+        let result = air (l,h);
+
+        console.log (result);
+       
+
+        /*calcule aire d un cercle*/
+
+        function aireCercle(R,pi) {
+            return pi*R**2;   
+        }
+
+        let pi=3.14;
+        let R=40;
+
+        let resultAireCercle= aireCercle(R,pi);
+        let textResult= "un cercle de Rayon"+" "+ R +" "+"à une aire de"+" "+resultAireCercle+".";
+
+        console.log(textResult);
+
+
+/*calcule addition et soustraction*/
+
+function add(aa,bb) {
+    return (aa+bb)
+    
+}
+function sous(cc,dd) {
+    return (cc-dd)
+    
+}
+
+let aa=11;
+let bb=10;
+let cc=17;
+let dd=16;
+
+let resultadd=add(aa,bb);
+let resultasous=sous(cc,dd);
+
+console.log(resultadd);
+console.log(resultasous);
+
+
+
+/*generer un article 01*/
+
+function genererPage(titre,contenu) {
+    let titrePage = "ceci est un "+titre;
+    let contenuPage = "ceci est "+contenu;
+
+    let page=titrePage+contenuPage;
+
+    console.log(page);
+}
+
+genererPage("Article 01 ", "mon premier article");
+genererPage("Article 02 ", "mon second article");
+
+/*generer un article 02 */
+
+function genererArticle(title,container,date) {
+   let th = "ceci est un " +title;
+   let p= "ceci est un " +container;
+   let dt= "ceci est "+date;
+
+   let article =th+p+dt;
+
+console.log(article);
+
+}
+
+genererArticle("nouvelle article 01 ", 
+                "exo 04 comment generer dynamiquement une page web ", 
+                "21/06/2020"
+                );
+
+/*generer un article 03 */
+
+function genererMenu(nom,url){
+
+let marque="ceci est une marque "+nom;
+let lien= "ceci est un lien "+url;
+
+let menu=marque+lien;
+
+console.log(menu);
+}
+
+genererMenu ("adidas ",  "https://www.adidas.fr/");
+genererMenu ("google ",  "https://www.google.fr/");
+
+/*generer un article 04 */
+
+function genererList(titra) {
+
+    let debutliste = "ceci est un debutliste ";
+    let item= "ceci est un item "+titra;
+    let finliste= " ceci est une finliste";
+
+    return debutliste+item+finliste;
+    
+}
+
+let htmlListe = genererList ("pomme");
+
+console.log(htmlListe);
+
+/*les boolean dans la fonction */
+
+function arg(arg1,arg2) {
+    
+    if (arg1>=0 && arg1<=30 || arg2>=70 && arg2<=100) {
+        
+        return true;
+    
+    }else{
+
+        return false;
+    }
+
+}
+//let arg1=50;
+//let arg2=10;
+
+let test1= arg (50,10);
+console.log(test1)
+
+let test2= arg (5,10);
+console.log(test2)
+
+/*calcul*/
+
+function calcule (val1, val2){
+
+    if (val1==val2) {
+        return (val1+val2)*3;
+    } else {
+        return val1+val2;
+    }
+    
+    
+}
+let test3= calcule (7,7);
+console.log(test3);
+
+
+    </script>
+
+
+</body>
+</html>
