@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*objet*/
+        let titres={
+            titre01:"ceci est le titre 01", 
+            titre02:"ceci est le titre 02", 
+            titre03:"ceci est le titre 03",
+        };
+        console.log(titres);
+
+        /*methode*/
+
+        let paragraphe={
+
+            text:"ceci est un text",
+            nom:"ceci est un nom",
+            prenom:"ceci est un prenom",
+            age:"ceci est un age",
+            isActif:true,
+            desription:"ceci est une description",
+            
+            methodeParagraphe: function  () {
+                let p="ceci est un paragraphe";
+                console.log(p);
+            }
+        };
+        
+        console.log(paragraphe.text);
+        console.log(paragraphe.nom);
+        console.log(paragraphe.isActif);
+        console.log(paragraphe.desription);
+        paragraphe.methodeParagraphe();
+        console.log(paragraphe.nom+ " est un client de mon site inter");
+
+        /*json*/
+
+    let image=[
+    {
+        nomImage: "ceci est le nom de l'image01",
+        dateImage: "ceci est la date de l'image01",
+        extensionImage: "ceci est l'extension de l'image01"
+    },
+    {
+        nomImage: "ceci est le nom de l'image02",
+        dateImage: "ceci est la date de l'image02",
+        extensionImage: "ceci est l'extension de l'image02"
+    },
+    {
+        nomImage: "ceci est le nom de l'image03",
+        dateImage: "ceci est la date de l'image03",
+        extensionImage: "ceci est l'extension de l'image03"
+    }
+];
+let imageJPEG = "l'intitulé de notre image: "+image[0].nomImage+"."; 
+
+imageJPEG += " créer le: "+image[0].dateImage;
+
+console.log(imageJPEG);
+
+
+    </script>
+</body>
+</html>

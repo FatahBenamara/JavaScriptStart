@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- innerHTML, style, -->
+    
+    <p id="p1"> ceci est un paragraphe 01</p>
+    <p id="p2"> ceci est un paragraphe 02</p>
+    
+    <section id="sct3"></section>
+    
+
+    <script>
+
+
+    let article ="";
+
+    for (let i = 0; i < 5; i++) {
+
+        article += "<div>";
+        article += "<h2>article" +i+"</h2>";
+        article += "<p>ceci est un article" +i+"</p>";
+        article += "</div>";
+
+
+
+
+        article +=" ceci est une suite de l'article "+i
+        
+        //console.log(article);
+    }
+    document.getElementById("sct3").innerHTML=article ;
+    
+    
+
+    
+
+    
+
+    
+
+
+    
+    </script>
+</body>
+</html>
