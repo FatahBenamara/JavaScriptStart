@@ -7,45 +7,42 @@
 </head>
 <body>
 
-    <!-- innerHTML, style, -->
-    
-    <p id="p1"> ceci est un paragraphe 01</p>
-    <p id="p2"> ceci est un paragraphe 02</p>
-    
-    <section id="sct3"></section>
-    
 
-    <script>
+    <!-- DOM string -->
+
+<h1 id="titrePrincipal"></h1>
+<h1 id="titreSecondaire"></h1>
+<h1 id="titreTertiaire"></h1>
 
 
-    let article ="";
+<script>
 
-    for (let i = 0; i < 5; i++) {
+let titre1 = "ceci est un titre principale";
+let titre2 = "ceci est un titre secondaire";
+let titre3 = "ceci est un titre tertiaire";
 
-        article += "<div>";
-        article += "<h2>article" +i+"</h2>";
-        article += "<p>ceci est un article" +i+"</p>";
-        article += "</div>";
+document.getElementById("titrePrincipal").innerHTML=titre1;
+document.getElementById("titreSecondaire").innerHTML=titre2;
+document.getElementById("titreTertiaire").innerHTML=titre3;
+
+</script>
+
+<!-- DOM image -->
+
+<div id="main"></div>
+<img src="" >
+<script>
+let img= "" ;
+
+for (let i = 0; i < 20; i++) {
+   img+= "<img src=\"http://via.placeholder.com/200x150\" alt=\"\"> *";
+}
+
+document.getElementById("main").innerHTML=img;
+
+</script>
 
 
 
-
-        article +=" ceci est une suite de l'article "+i
-        
-        //console.log(article);
-    }
-    document.getElementById("sct3").innerHTML=article ;
-    
-    
-
-    
-
-    
-
-    
-
-
-    
-    </script>
 </body>
 </html>
