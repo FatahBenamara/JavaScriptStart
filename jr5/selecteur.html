@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- querySelector -->
+    <p></p>
+    <h1 id="titre"></h1>
+    <img id="miniature" src="" alt="">
+    <!-- http://via.placeholder.com/200x150 -->
+    <div class="first"></div>
+    <ul>
+        <li></li>
+    </ul>
+
+    <script>
+
+    let paragraphe= "ceci est un paragraphe";
+    let titre= "ceci est un titre";
+    let image= "http://via.placeholder.com/200x150";
+    let division= "ceci est la premiere div";
+    let element= "ceci est l'element li";
+
+    document.querySelector("p").innerHTML= paragraphe;
+    document.querySelector("#titre").innerHTML= titre;
+    document.querySelector("#miniature").src= image;
+    document.querySelector("#miniature").style["border"]= "13px solid blue";
+    document.querySelector(".first").innerHTML= division;
+    document.querySelector("ul li").innerHTML= element;
+    
+    
+    
+    
+    
+    
+    </script>
+
+
+
+
+
+</body>
+</html>
