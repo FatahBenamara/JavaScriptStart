@@ -1,0 +1,19 @@
+body{
+    margin: 0 auto;
+    width: 900px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+header h1{
+    margin-left: 60px;
+}
+
+.galerie{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 10px;
+}
