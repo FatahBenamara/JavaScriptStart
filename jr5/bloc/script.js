@@ -10,11 +10,11 @@ document.querySelector("header").innerHTML=textMenu;
 
 /* BODY */
 let textMain ="";
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 8; i++) {
     
     textMain += "<div>";
     textMain += "<h2> Titre Article </h2>";
-    textMain += "<img src=\"  http://via.placeholder.com/300x300  \">";
+    textMain += "<img src=\"  http://via.placeholder.com/200x200  \">";
     textMain += "<p>lorem ipsum </p>";
     textMain += "</div>";
 }
