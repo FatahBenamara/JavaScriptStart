@@ -1,0 +1,26 @@
+body{
+    width: 900px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid black;
+    /*-------*/
+    overflow: hidden;
+}
+
+.menu{
+    width: 150px;
+    background: greenyellow;
+    /*---------*/
+    transform: translateY(150px);
+    transition: 1s transform;
+}
+.menu.show{
+
+    /*-----------*/
+    transform: translateX(0px);
+}

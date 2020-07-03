@@ -1,0 +1,12 @@
+.definitions{
+width: 500px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 10px;
+}
+
+.definitions div{
+    padding: 0px 10px;
+    box-shadow: 2px 2px 5px grey ;
+}
